@@ -1,1 +1,3 @@
-# scapy_core_concepts
+# Scapy Concepts
+
+This script shows beginner-friendly Scapy exmaples!
