@@ -52,18 +52,22 @@ Examples:
     ```
     python scapy_core_concepts.py ping 8.8.8.8
     ```
+    
   - Show a built packet (inspect structure):
     ```
     python scapy_core_concepts.py show --dest 1.1.1.1
     ```
+    
   - Fast SYN probe of one port:
     ```
     sudo python scapy_core_concepts.py scan scanme.nmap.org --port 22
     ```
+    
   - Capture 5 packets:
     ```
     sudo python scapy_core_concepts.py sniff --count 5
     ```
+    
   - Traceroute:
     ```
     sudo python scapy_core_concepts.py trace 8.8.8.8 --max-hops 12
