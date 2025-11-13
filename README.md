@@ -48,30 +48,38 @@ python scapy_core_concepts.py --help
 ```
 
 Examples:
+
   - Ping a host:
     ```
     python scapy_core_concepts.py ping 8.8.8.8
-    ```
-    
+    ```    
   - Show a built packet (inspect structure):
     ```
     python scapy_core_concepts.py show --dest 1.1.1.1
-    ```
-    
+    ```    
   - Fast SYN probe of one port:
     ```
     sudo python scapy_core_concepts.py scan scanme.nmap.org --port 22
-    ```
-    
+    ```  
   - Capture 5 packets:
     ```
     sudo python scapy_core_concepts.py sniff --count 5
     ```
-    
   - Traceroute:
     ```
     sudo python scapy_core_concepts.py trace 8.8.8.8 --max-hops 12
     ```
+    
+---
+
+## Troubleshooting
+
+- `ImportError: scapy not found` - run `pip install scapy` inside your virtualenv.
+- **Permission errors** when sending or sniffing - retry with `sudo` or an Administror shell.
+- **No replies when scanning** - firewall or ISP filtering may block probes; try scanning a known test host like `scanme.nmap.org`
 
 ---
 
+## License
+
+This project is licensed under the [MIT License](https://github.com/dre86dre/scapy_core_concepts/blob/main/LICENSE).
