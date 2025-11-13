@@ -26,3 +26,48 @@ python3 -m pip install scapy
 - Use `scanme.nmap.org` for learning scans if you need a public target that allows basic scanning.
 - Do not run packet capture on networks where you may capture sensitive traffic without permission.
 
+---
+
+## Installation
+
+Clone the repo:
+
+```
+git clone https://github.com/dre86dre/scapy_core_concepts.git
+cd scapy_core_concepts
+```
+
+---
+
+## Usage
+
+Make sure `scapy` is installed, then run the script:
+
+```
+python scapy_core_concepts.py --help
+```
+
+Examples:
+  - Ping a host:
+    ```
+    python scapy_core_concepts.py ping 8.8.8.8
+    ```
+  - Show a built packet (inspect structure):
+    ```
+    python scapy_core_concepts.py show --dest 1.1.1.1
+    ```
+  - Fast SYN probe of one port:
+    ```
+    sudo python scapy_core_concepts.py scan scanme.nmap.org --port 22
+    ```
+  - Capture 5 packets:
+    ```
+    sudo python scapy_core_concepts.py sniff --count 5
+    ```
+  - Traceroute:
+    ```
+    sudo python scapy_core_concepts.py trace 8.8.8.8 --max-hops 12
+    ```
+
+---
+
