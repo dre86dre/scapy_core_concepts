@@ -33,7 +33,7 @@ python3 -m pip install scapy
 Clone the repo:
 
 ```
-git clone https://github.com/dre86dre/scapy_core_concepts.git
+git clone https://github.com/coder0name0dre/scapy_core_concepts.git
 cd scapy_core_concepts
 ```
 
@@ -82,4 +82,4 @@ Examples:
 
 ## License
 
-This project is licensed under the [MIT License](https://github.com/dre86dre/scapy_core_concepts/blob/main/LICENSE).
+This project is licensed under the [MIT License](https://github.com/coder0name0dre/scapy_core_concepts/blob/main/LICENSE).
